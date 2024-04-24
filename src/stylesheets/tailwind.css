@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+
+    .number{
+        @apply rounded-[4px] py-3 text-white text-xl bg-gray-600;
+    }
+
+    .operator{
+        @apply rounded-[4px] py-3 text-white text-xl bg-gray-700;
+    }
+
+    .equal{
+        @apply rounded-[4px] py-3 text-gray-900 text-xl bg-blue-600;
+    }
+}
