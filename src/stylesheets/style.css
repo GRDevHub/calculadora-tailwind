@@ -794,6 +794,12 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .number {
   border-radius: 4px;
   --tw-bg-opacity: 1;
