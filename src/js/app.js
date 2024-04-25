@@ -87,13 +87,13 @@ const outputResult = () => {
 }
 
 const addNumero = (num) => {
-    console.log(opeActual.substring(opeActual.length - 1))
     if(num === '.'){
         if(opeActual === '') return;
-        if(opeActual !== '' && opeActual.substring(opeActual.length - 1) === '.') return;
+        // if(opeActual !== '' && opeActual.substring(opeActual.length - 1) === '.') return;
+        if(opeActual.includes('.')) return;
         opeActual = opeActual.toString() + num.toString();
         updateDisplay();
-        
+
     }else{
         opeActual = opeActual.toString() + num.toString();
         updateDisplay();
